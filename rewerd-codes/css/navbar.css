@@ -25,31 +25,31 @@
     width: 35%;
     margin-right: .3vw;
 }
-.ReWerdNavbar ul{
+.ReWerdNavList{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.ReWerdNavbar ul li{
+.ReWerdNavList li{
     padding: 0.5vw;
 }
-.ReWerdNavbar ul li button{
+.ReWerdNavList li button{
     background: none;
     color: var(--white);
     font-size: 1.5vw;
     padding: 0.3vw 1vw;
 }
-.ReWerdNavbar ul li button:hover{
+.ReWerdNavList li button:hover{
     color: var(--green-l);
 }
-.ReWerdNavbar ul li select{
+.ReWerdNavList li select{
     padding: 1.1vw 1.5vw;
     font-size: 1.2vw;
     color: var(--white);
     border-radius: 2vw;
     background: var(--green);
 }
-.ReWerdNavbar ul li select:hover{
+.ReWerdNavList li select:hover{
     box-shadow: var(--shadow);
 }
 .ReWerdHeader{
@@ -65,4 +65,19 @@
     font-size: 5vw;
     font-weight: 400;
     letter-spacing: .5vw;
+}
+.ReWerdNavMenuBtn{
+    display: none;
+    color: var(--green-l);
+    background: none;
+    font-size: 3vw;
+}
+
+@media screen and (max-width: 650px) {
+    .ReWerdNavList{
+        display: none;
+    }
+    .ReWerdNavMenuBtn{
+        display: block;
+    }
 }
