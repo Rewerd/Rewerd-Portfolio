@@ -10,6 +10,12 @@
     background-color: var(--black);
     padding: 1vw 2vw;
     background: var(--blur);
+
+
+    /* //////////// */
+    display: none;
+
+    /* //////////// */
     /* background-color: red; */
 }
 .ReWerdNavBtn{
