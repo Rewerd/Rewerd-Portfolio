@@ -150,25 +150,24 @@
 
 .header_info_all_cards {
     width: 100%;
-    padding: 0 10%;
-
-    
+    padding: 0 10%;  
 }
-
 .info_all_card:hover{
     background-position: left;
     background-color: blue;
     border: 2px solid blue;
 }
-/*  */
 .header_info_nav_text {
     text-align: center;
     font-size: 2vw;
     transition: 0.3s !important;
     margin: 2vw 0;
 }
+.header_info_nav_text h2 {
+    transition: 0.3s !important; 
+}
 .header_info_nav_text h2:hover{
-    color: #fff;
+    color: #fff !important;
 }
 .header_info_all_cards {
     margin: 0 auto;
@@ -274,18 +273,18 @@
     .header_info_all_cards{
         flex-wrap: wrap;
     }
-
-
-
     .info_all_card_p span{
         text-align: center;
-        font-size: 4vw;
+        font-size: 6vw;
         color: #fff;
     }
     .info_all_card_h2 span {
         text-align: center;
-        font-size: 10vw;
+        font-size: 12vw;
         transition: 0.3s !important;
         color: #fff;
+    }
+    .header_info_nav_text h2 {
+        font-size: 8vw;
     }
 }
