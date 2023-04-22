@@ -71,7 +71,7 @@
     justify-content: space-between;
     width: 40%;
     padding: 6% 5% 0 5%;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
     border-radius: 10px;
     padding: 3% 0;
     background-color: rgba(45, 45, 45, 0.067);
@@ -144,5 +144,148 @@
         width: 90%;
         font-size: 4vw;
         padding-bottom: 10%;
+    }
+}
+/* header info start ////////////////////////////*/
+
+.header_info_all_cards {
+    width: 100%;
+    padding: 0 10%;
+
+    
+}
+
+.info_all_card:hover{
+    background-position: left;
+    background-color: blue;
+    border: 2px solid blue;
+}
+/*  */
+.header_info_nav_text {
+    text-align: center;
+    font-size: 2vw;
+    transition: 0.3s !important;
+    margin: 2vw 0;
+}
+.header_info_nav_text h2:hover{
+    color: #fff;
+}
+.header_info_all_cards {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+}
+.info_all_card {
+    width: 30%;
+    padding: 3%;
+    background-color: rgba(45, 45, 45, 0.067);
+    border-radius: 10px;
+    border: 3px solid blue;
+    background:
+    linear-gradient(-45deg, #0000 40%, #000 0 60%, #0000 0) right/300% 100% no-repeat,
+    linear-gradient(-45deg, rgba(45, 45, 45, 0.067)  40%, blue 0 60%, blue  0) right/300% 100% no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.8s;
+}
+.info_all_card:hover{
+    border: 3px solid #fff;
+    text-align: center;
+}
+.info_all_card_h2{
+    text-align: center;
+    margin: 0 auto !important;
+}
+.info_all_card_h2 span {
+    text-align: center;
+    font-size: 6vw;
+    transition: 0.3s !important;
+    color: #fff;
+}
+.info_all_card_h2 span:hover {
+    color: #fff !important;
+}
+
+.info_all_card_p{
+    text-align: center;
+    margin: 0 auto !important;
+
+}
+.info_all_card_p span{
+    text-align: center;
+    font-size: 1.2vw;
+    color: #fff;
+}
+.card3{
+    flex-wrap: nowrap;
+}
+@media (max-width:750px) {
+    .header_info_all_cards div {
+        margin: 2% 1%;
+    }
+    .header_info_all_cards div:nth-child(1) {
+        width: 40%;
+    }
+    .header_info_all_cards div:nth-child(2) {
+        width: 40%;
+    }
+    .header_info_all_cards div:nth-child(3) {
+        width: 50%;
+    }
+    .card3{
+        background:
+        linear-gradient(-45deg, #0000 45%, #000 0 60%, #0000 0) right/300% 100% no-repeat,
+        linear-gradient(-40deg, rgba(45, 45, 45, 0.067)  40%, blue 0 60%, blue  0) right/300% 100% no-repeat;
+      -webkit-background-clip: text, padding-box;
+      background-clip: text, padding-box;
+      transition: 0.8s;
+    }
+    .header_info_all_cards{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width:450px) {
+    .header_info_all_cards div {
+        margin: 5% 1%;
+        padding: 2% 0;
+    }
+    .header_info_all_cards div:nth-child(1) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .header_info_all_cards div:nth-child(2) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .header_info_all_cards div:nth-child(3) {
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .info_all_card{
+        background:
+        linear-gradient(-45deg, #0000 45%, #000 0 60%, #0000 0) right/300% 100% no-repeat,
+        linear-gradient(-45deg, rgba(45, 45, 45, 0.067)  35%, blue 0 65%, blue  0) right/300% 100% no-repeat;
+      -webkit-background-clip: text, padding-box;
+      background-clip: text, padding-box;
+      transition: 0.8s;
+    }
+    .header_info_all_cards{
+        flex-wrap: wrap;
+    }
+
+
+
+    .info_all_card_p span{
+        text-align: center;
+        font-size: 4vw;
+        color: #fff;
+    }
+    .info_all_card_h2 span {
+        text-align: center;
+        font-size: 10vw;
+        transition: 0.3s !important;
+        color: #fff;
     }
 }
